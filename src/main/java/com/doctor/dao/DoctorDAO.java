@@ -12,11 +12,12 @@ public class DoctorDAO {
 	
 	   static List<Doctor> list;
 		
-		public static void insert(Doctor bean)
+		public static String insert(Doctor bean)
 		{
 			list=new ArrayList<Doctor>();
 			
 			list.add(bean);
+			return "Inserted";
 			
 		}
 		
